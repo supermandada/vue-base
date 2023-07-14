@@ -10,6 +10,18 @@ import ArrayList from './components/ArrayList.vue'
 import computerDemo from './components/computerDemo.vue'
 import ClassDemo from './components/ClassDemo.vue'
 import StyleDemo from './components/StyleDemo.vue'
+import WatchDemo from './components/WatchDemo.vue'
+import ModelDemo from './components/ModelDemo.vue'
+import RefDemo from './components/RefDemo.vue'
+import parent from './components/parent.vue'
+import componentA from './components/componentA.vue'
+import Main from './components/Main.vue'
+
+// export default {
+//   components: {
+//     // ModelDemo
+//   }
+// }
 </script>
 
 <template>
@@ -23,5 +35,11 @@ import StyleDemo from './components/StyleDemo.vue'
   <!-- <ArrayList/> -->
   <!-- <computerDemo/> -->
   <!-- <ClassDemo/> -->
-  <StyleDemo/>
+  <!-- <StyleDemo/> -->
+  <!-- <WatchDemo/> -->
+  <!-- <ModelDemo/> -->
+  <!-- <RefDemo/> -->
+  <!-- <parent/> -->
+  <!-- <componentA /> -->
+  <Main/>
 </template>

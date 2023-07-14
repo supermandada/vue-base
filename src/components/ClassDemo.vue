@@ -23,7 +23,8 @@ export default {
 }
 </script>
 
-<style>
+<!-- scoped只在该组件生效 -->
+<style scoped>
 .active{
     font-size: large;
 }
