@@ -1,4 +1,4 @@
-<script setup>
+<script>
 import HelloWorld from './components/HelloWorld.vue';
 import IfDemo from './components/IfDemo.vue';
 import ForDemo from './components/ForDemo.vue'
@@ -17,11 +17,24 @@ import parent from './components/parent.vue'
 import componentA from './components/componentA.vue'
 import Main from './components/Main.vue'
 
-// export default {
-//   components: {
-//     // ModelDemo
-//   }
-// }
+export default {
+  components: {
+    parent
+  },
+  data() {
+    return {
+      message: "爷爷的财产"
+    }
+  },
+  // provide: {
+  //   messge: "财产"
+  // }
+  provide() {
+    return {
+      message: this.message
+    }
+  }
+}
 </script>
 
 <template>
@@ -39,7 +52,7 @@ import Main from './components/Main.vue'
   <!-- <WatchDemo/> -->
   <!-- <ModelDemo/> -->
   <!-- <RefDemo/> -->
-  <!-- <parent/> -->
+  <parent/>
   <!-- <componentA /> -->
-  <Main/>
+  <!-- <Main/> -->
 </template>
